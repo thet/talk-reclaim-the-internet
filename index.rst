@@ -3,7 +3,7 @@ Reclaim the Internet!
 
 Vortrag und Diskussion über Möglichkeiten des Webpublishing.
 
-Download der Materialien: 
+Download der Materialien: https://github.com/thet/talk-reclaim-the-internet
 Mehr info über das Projekt Backpackjournalism: http://wikis.spektral.at/bpj/
 
 Inhalt:
@@ -209,3 +209,9 @@ examples:
         - relativ komplizierte technik
         - relativ hohe kosten für hosting
 
+
+Service Abusment
+================
+* Dropbox als Hosting Provider:
+    https://dl.dropbox.com/u/1280050/index.html
+* Github als Hosting Provider
