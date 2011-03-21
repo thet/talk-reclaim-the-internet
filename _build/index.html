@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+  "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Reclaim the Internet! &mdash; Reclaim the Internet! v1.0 documentation</title>
+    <link rel="stylesheet" href="_static/default.css" type="text/css" />
+    <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '',
+        VERSION:     '1.0',
+        COLLAPSE_MODINDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="_static/jquery.js"></script>
+    <script type="text/javascript" src="_static/doctools.js"></script>
+    <link rel="top" title="Reclaim the Internet! v1.0 documentation" href="#" /> 
+  </head>
+  <body>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             accesskey="I">index</a></li>
+        <li><a href="#">Reclaim the Internet! v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="reclaim-the-internet">
+<h1>Reclaim the Internet!<a class="headerlink" href="#reclaim-the-internet" title="Permalink to this headline">¶</a></h1>
+<p>Vortrag und Diskussion über Möglichkeiten des Webpublishing.</p>
+<p>Mehr info über das Projekt Backpackjournalism: <a class="reference external" href="http://wikis.spektral.at/bpj/">http://wikis.spektral.at/bpj/</a></p>
+<p>Inhalt:</p>
+<ul class="simple">
+</ul>
+</div>
+<div class="section" id="html-einfuhrung">
+<h1>HTML Einführung<a class="headerlink" href="#html-einfuhrung" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="geschichte">
+<h2>Geschichte<a class="headerlink" href="#geschichte" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>HyperText Markup Language</li>
+<li>Von Tim Berners-Lee, CERN 1990</li>
+<li>SGML -&gt; HTML -&gt; XML -&gt; XHTML</li>
+<li>Ursprüngliches Ziel: Einfaches publizieren von verlinkten wissenschaftlichen
+Dokumenten.</li>
+</ul>
+</div>
+<div class="section" id="syntax-allgemein">
+<h2>Syntax Allgemein<a class="headerlink" href="#syntax-allgemein" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>&lt;tag attribute=&#8221;value&#8221;&gt;content&lt;/tag&gt;</li>
+<li>Elemente (Tags) können hierarchisch strukturiert werden.</li>
+<li>Elemente (Tags) haben ein öffnendes (&lt;tag&gt;) und ein schließendes (&lt;/tag&gt;)Element</li>
+<li>Manche Elemente haben kein explizit schließendes Element und werden gleich
+beim öffnen geschlossen (&lt;tag /&gt;).</li>
+</ul>
+</div>
+<div class="section" id="syntax-uberblick">
+<h2>Syntax Überblick<a class="headerlink" href="#syntax-uberblick" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Dokumentenstrukturelemente</p>
+<blockquote>
+<ul class="simple">
+<li>&lt;html&gt;..&lt;/html&gt;</li>
+<li>&lt;head&gt;..&lt;/head&gt;</li>
+<li>&lt;body&gt;..&lt;/body&gt;</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Kopfelemente</p>
+<blockquote>
+<ul class="simple">
+<li>&lt;title&gt;..&lt;title&gt;</li>
+<li>&lt;meta /&gt;</li>
+<li>&lt;link /&gt;</li>
+<li>&lt;script /&gt;</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Inhalts-Blockelemente</p>
+<p>Erzeugen einen neuen Absatz / Umbruch.</p>
+<blockquote>
+<ul class="simple">
+<li>&lt;p&gt;</li>
+<li>&lt;h1&gt;..&lt;/h1&gt;, &lt;h2&gt;..&lt;/h2&gt;, ... &lt;h6&gt;..&lt;/h6&gt;</li>
+<li>&lt;ol&gt;, &lt;ul&gt;, ..</li>
+<li>&lt;table&gt; ...</li>
+<li>&lt;div&gt; ...</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Inhalts-Inlineelemente</p>
+<p>Werden im Textfluss dargestellt.</p>
+<blockquote>
+<ul class="simple">
+<li>&lt;img&gt;, &lt;a&gt;, ..</li>
+<li>&lt;b&gt;, &lt;i&gt;, ..</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="syntax-beispiel">
+<h2>Syntax Beispiel<a class="headerlink" href="#syntax-beispiel" title="Permalink to this headline">¶</a></h2>
+<p>Siehe <a class="reference external" href="../html-example/index.html">html-example/index.html</a></p>
+</div>
+<div class="section" id="info">
+<h2>info<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/HTML">http://en.wikipedia.org/wiki/HTML</a></li>
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/HTML_element">http://en.wikipedia.org/wiki/HTML_element</a></li>
+<li><a class="reference external" href="http://de.selfhtml.org/">http://de.selfhtml.org/</a></li>
+<li><a class="reference external" href="http://diveintohtml5.org/">http://diveintohtml5.org/</a></li>
+</ul>
+</div>
+<div class="section" id="entwicklungshilfen">
+<h2>Entwicklungshilfen<a class="headerlink" href="#entwicklungshilfen" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Firebug für Firefox <a class="reference external" href="http://getfirebug.com/">http://getfirebug.com/</a></li>
+</ul>
+</div>
+</div>
+<div class="section" id="through-the-web-publishing">
+<h1>through the web publishing<a class="headerlink" href="#through-the-web-publishing" title="Permalink to this headline">¶</a></h1>
+<p># &#8211;&gt; cms vendor map</p>
+<p>vorteil gegenüber direktem html publishing:</p>
+<ul>
+<li><p class="first">HTML Kenntnisse sind keine Voraussetzung</p>
+</li>
+<li><p class="first">Einheitliches Design über alle Inhalte hinweg</p>
+</li>
+<li><p class="first">Strukturierung der Inhalte ist einfacher</p>
+</li>
+<li><p class="first">Bestimmte Funktionalitäten werden erst durch CMS Systeme möglich</p>
+<blockquote>
+<ul class="simple">
+<li>Kommentare</li>
+<li>Dynamische Suche</li>
+<li>Behandlung unterschiedlicher Inhaltstypen</li>
+<li>Datenbanksysteme</li>
+<li>...</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+<div class="section" id="wiki-systeme">
+<h2>wiki systeme<a class="headerlink" href="#wiki-systeme" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>pros:</dt>
+<dd><ul class="first last simple">
+<li>einfache, unbürokratische kolloboration</li>
+<li>schnelles erstellen von verlinkten dokumenten</li>
+<li>ideal zur projektorganisation, ideenfindung, wissensmanagement</li>
+</ul>
+</dd>
+<dt>cons:</dt>
+<dd><ul class="first last simple">
+<li>wenig ausgeprägt bei rechtemanagement und eingabehilfen</li>
+<li>inhalte können nicht hierarchisch organisiert werden</li>
+<li>datenbankapplikationen können nicht umgesetzt werden</li>
+</ul>
+</dd>
+<dt>examples:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>moinmoin - <a class="reference external" href="http://moinmo.in/">http://moinmo.in/</a></dt>
+<dd><ul class="first last simple">
+<li>keine datenbank notwendig</li>
+<li>viele eingabeformate (bsp reStructuredText)</li>
+<li>bewährt sich seit jahren als mur.at wiki system</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>dokuwiki - <a class="reference external" href="http://www.dokuwiki.org/">http://www.dokuwiki.org/</a></dt>
+<dd><ul class="first last simple">
+<li>bewährt sich seit jahren im spektral als wiki system</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>mediawiki - <a class="reference external" href="http://www.mediawiki.org/">http://www.mediawiki.org/</a></dt>
+<dd><ul class="first last simple">
+<li>wiki system des weltweit größten wikis: wikipedia.org</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><p class="first">... diverse weitere + als plugins für cms systeme</p>
+</li>
+<li><p class="first">first ever created wiki: <a class="reference external" href="http://c2.com/cgi/wiki?FrontPage">http://c2.com/cgi/wiki?FrontPage</a></p>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="blog-systeme">
+<h2>blog systeme<a class="headerlink" href="#blog-systeme" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>pros:</dt>
+<dd><ul class="first last">
+<li><p class="first">optimiert für das publizieren von nachrichten</p>
+</li>
+<li><dl class="first docutils">
+<dt>viele community features</dt>
+<dd><ul class="first last simple">
+<li>kommentare</li>
+<li>backlinks</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt>cons:</dt>
+<dd>die optimierung als blog system schränkt andere einsatzzwecke etwas ein</dd>
+<dt>examples:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>wordpress - <a class="reference external" href="http://wordpress.org/">http://wordpress.org/</a></dt>
+<dd><ul class="first simple">
+<li>bekanntestes blog system mit vielen features</li>
+<li>einfache bedienung</li>
+<li>auch als cms system einsetzbar</li>
+</ul>
+<ul class="simple">
+<li>als cms system weniger gut brauchbar</li>
+</ul>
+<ul class="last simple">
+<li>mehr info: <a class="reference external" href="http://en.wikipedia.org/wiki/WordPress">http://en.wikipedia.org/wiki/WordPress</a></li>
+<li>gratis blogs: <a class="reference external" href="http://wordpress.com/">http://wordpress.com/</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>moveable type - <a class="reference external" href="http://www.movabletype.org/">http://www.movabletype.org/</a></dt>
+<dd><ul class="first simple">
+<li>bekanntes blog system</li>
+</ul>
+<ul class="last simple">
+<li>hr info: <a class="reference external" href="http://en.wikipedia.org/wiki/Movable_Type">http://en.wikipedia.org/wiki/Movable_Type</a></li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>zine - <a class="reference external" href="http://zine.pocoo.org/">http://zine.pocoo.org/</a></dt>
+<dd><ul class="first last simple">
+<li>blog system in python</li>
+<li>geschrieben vom grazer armin ronnacher</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+<div class="section" id="cms-systeme">
+<h2>cms systeme<a class="headerlink" href="#cms-systeme" title="Permalink to this headline">¶</a></h2>
+<dl class="docutils">
+<dt>what&#8217;s that?</dt>
+<dd><ul class="first last">
+<li><p class="first">Content Management System</p>
+</li>
+<li><dl class="first docutils">
+<dt>Wichtige Bestandteile:</dt>
+<dd><ul class="first last simple">
+<li>Theming Engine (Design der Website)</li>
+<li>Verschiedene Inhaltstypen</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+<dt>examples:</dt>
+<dd><ul class="first last">
+<li><dl class="first docutils">
+<dt>joomla</dt>
+<dd><ul class="first simple">
+<li>sehr weit verbreitet</li>
+<li>relativ einfache bedienung</li>
+</ul>
+<ul class="last simple">
+<li>schlecht wartbar und erweiterbar</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>drupal</dt>
+<dd><ul class="first last simple">
+<li>weit verbreitet mit vielen community features</li>
+<li>gut wartbar und erweiterbar</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>wordpress</dt>
+<dd><ul class="first simple">
+<li>weit verbreitet</li>
+<li>wird immer öfter als cms system genutzt</li>
+</ul>
+<ul class="last simple">
+<li>als cms system eingeschränkt geeignet</li>
+</ul>
+</dd>
+</dl>
+</li>
+<li><dl class="first docutils">
+<dt>plone</dt>
+<dd><ul class="first simple">
+<li>sehr einfache bedienung</li>
+<li>robustes technisches backend</li>
+<li>wenige bekanne sicherheitslücken (u.a. python, zope)</li>
+<li>sehr gut erweiterbar</li>
+</ul>
+<ul class="last simple">
+<li>geringe verbreitung</li>
+<li>relativ komplizierte technik</li>
+<li>relativ hohe kosten für hosting</li>
+</ul>
+</dd>
+</dl>
+</li>
+</ul>
+</dd>
+</dl>
+</div>
+</div>
+
+
+          </div>
+        </div>
+      </div>
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <h3><a href="#">Table Of Contents</a></h3>
+            <ul>
+<li><a class="reference external" href="#">Reclaim the Internet!</a><ul>
+</ul>
+</li>
+<li><a class="reference external" href="#html-einfuhrung">HTML Einführung</a><ul>
+<li><a class="reference external" href="#geschichte">Geschichte</a></li>
+<li><a class="reference external" href="#syntax-allgemein">Syntax Allgemein</a></li>
+<li><a class="reference external" href="#syntax-uberblick">Syntax Überblick</a></li>
+<li><a class="reference external" href="#syntax-beispiel">Syntax Beispiel</a></li>
+<li><a class="reference external" href="#info">info</a></li>
+<li><a class="reference external" href="#entwicklungshilfen">Entwicklungshilfen</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#through-the-web-publishing">through the web publishing</a><ul>
+<li><a class="reference external" href="#wiki-systeme">wiki systeme</a></li>
+<li><a class="reference external" href="#blog-systeme">blog systeme</a></li>
+<li><a class="reference external" href="#cms-systeme">cms systeme</a></li>
+</ul>
+</li>
+</ul>
+
+            <h3>This Page</h3>
+            <ul class="this-page-menu">
+              <li><a href="_sources/index.txt"
+                     rel="nofollow">Show Source</a></li>
+            </ul>
+          <div id="searchbox" style="display: none">
+            <h3>Quick search</h3>
+              <form class="search" action="search.html" method="get">
+                <input type="text" name="q" size="18" />
+                <input type="submit" value="Go" />
+                <input type="hidden" name="check_keywords" value="yes" />
+                <input type="hidden" name="area" value="default" />
+              </form>
+              <p class="searchtip" style="font-size: 90%">
+              Enter search terms or a module, class or function name.
+              </p>
+          </div>
+          <script type="text/javascript">$('#searchbox').show(0);</script>
+        </div>
+      </div>
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="genindex.html" title="General Index"
+             >index</a></li>
+        <li><a href="#">Reclaim the Internet! v1.0 documentation</a> &raquo;</li> 
+      </ul>
+    </div>
+    <div class="footer">
+      &copy; Copyright 2011, Johannes Raggam.
+      Created using <a href="http://sphinx.pocoo.org/">Sphinx</a> 0.6.6.
+    </div>
+  </body>
+</html>

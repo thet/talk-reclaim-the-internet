@@ -1,0 +1,78 @@
+<!-- das ist ein kommentar -->
+
+<!-- dieses dokument trägt den namen index.html. die meisten webserver sind so
+eingestellt, dass beim aufruf eines verzeichnisses
+(bsp http://example.com/verzeichnisname/ ) ein index.html dokument automatisch
+zurückgeliefert wird, wenn kein anderer dateiname angegeben ist. -->
+
+<!doctype html><!-- deklaration des dokumententyps. hier nach dem html5
+                    standard -->
+<html lang="de"><!-- start des html dokuments -->
+  <head><!-- start des kopfbereiches -->
+
+  <meta charset="utf-8"/><!-- deklaration des verwendeten zeichensatzes.
+                              utf-8 ist perfekt, da es sehr viele zeichen
+                              unterschiedlicher sprachen unterstützt
+                              unterstützt! -->
+                              
+  <title>Titel des HTML Dokuments</title>
+  
+  <!-- inkludieren eines stylesheets -->
+  <link rel="stylesheet" type="text/css" media="all" href="styles.css" />
+  
+  <!-- inkludieren eines favicons (erscheint in der adresszeile des browsers)
+  -->
+  <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
+</head><!-- ende des kopfbereiches -->
+<body><!-- beginn des hauptbereiches -->
+
+  <h1>Überschrift ersten Ranges</h2>
+  <h2>Überschrift zweiten Ranges</h2>
+  <p>Paragraph - Allgemeiner Textteil. Es folgt ein Zeilenumbruch innerhalb des
+  Absatzes:<br /><!-- Elemente, die kein explizites End-Tag haben, sollen
+  immer mit dem "/" Zeichen im Startelement abgeschlossen werden. Das
+  gewährleistet die Kompatibilität zum XTHML Standard. das Leerzeichen
+  zwischen Elementnamen und "/" Zeichen ist optional, aber erhöht die
+  Kompatibilität mit älteren Browsern -->
+  HTML Dokumente sollten möglichst semantisch sinnvoll gegliedert werden.
+  &lt;h1&gt; &dash; &lt;h4&gt; für Überschriften, Absätze immer in
+  &lt;p&gt;-tags, listen und navigationsmenüs in &lt;ol&gt; oder
+  &lt;ul&gt; elementen, ...</p>
+
+  <p>Nächster Paragraph.<br />
+  Verlinkung von Textelementen:
+    <a href="http://spektral.at/"
+      title="Titel, der erscheint, wenn man mit der Maus über den Link fährt">
+      Text, der verlinkt wird</a>.
+  <br />
+  Bild, das eingebunden wird:<br />
+  <img src="http://spektral.at/sites/all/themes/spekzen2/logo.png"
+    alt="Text, der erscheint, wenn das Bild nicht angezeigt werden kann"
+    title="Text, der erscheint, wenn man mit der Maus über das Bild fährt" />
+  <br />
+  Was passiert nun, wenn da Bild nicht gefunden werden kann?<br />
+  <img src="diesesbildexistiertnicht.jpg"
+    alt="Text, der erscheint, wenn das Bild nicht angezeigt werden kann"
+    title="Text, der erscheint, wenn man mit der Maus über das Bild fährt" />
+  <br />
+  Formatierung von Text: <b>fett (bold)</b>, <i>kursiv (italic)</i></p>
+
+  <h2>Geordnete Listen (Ordered Lists)</h2>
+  <ol>
+    <li>Erstes Listenelement (List Item)</li>
+    <li>Zweites Listenelement</li>
+    <li>Drittes Listenelement</li>
+    <li>Viertes Listenelement</li>
+  </ol>
+
+  <h2>Ungeordnete Listen (Unordered Lists)</h2>
+  <ul>
+    <li>Erstes Listenelement (List Item)</li>
+    <li>Zweites Listenelement</li>
+    <li>Drittes Listenelement</li>
+    <li>Viertes Listenelement</li>
+  </ul>
+ 
+
+</body><!-- ende des hauptbereiches -->
+</html><!-- ende des html dokuments -->
