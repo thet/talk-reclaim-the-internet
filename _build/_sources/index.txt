@@ -1,6 +1,3 @@
-http://www.opte.org/maps/
-what is the internet, anyway? http://www.youtube.com/watch?v=TmyN4CxauaM
-
 =====================
 Reclaim the Internet!
 =====================
@@ -8,7 +5,6 @@ Reclaim the Internet!
 Vortrag und Diskussion über Möglichkeiten des Webpublishing.
 
 Download der Materialien: https://github.com/thet/talk-reclaim-the-internet
-Mehr info über das Projekt Backpackjournalism: http://wikis.spektral.at/bpj/
 
 Inhalt:
 
@@ -96,18 +92,33 @@ DNS - Domain Name System
       Adresse mehrere Dienste laufen zu lassen, die der Server durch den
       unterschiedlichen Namen unter auseinander halten kann.
 
+* Registrierung eines Domain Namens
+    
+    * Registrierungsbehören verwalten Länderspezifische Domains. Für
+      Österreich: `nic.at`_
+    * Domain Regsitrars übernehmen den Registrierungsprozess bei
+      Registrierungsbehörden und das Eintragen in einen DNS Server. Bsp:
+      `easyname.at`_.
+
 .. _IP-Adresse: http://de.wikipedia.org/wiki/IP-Adresse
 .. _IPv4: http://en.wikipedia.org/wiki/IPv4
 .. _28.April 2011: http://inetcore.com/project/ipv4ec/index_en.html
 .. _IPv6: http://en.wikipedia.org/wiki/IPv6
 .. _DNS - Domain Name System: http://de.wikipedia.org/wiki/Domain_Name_System
+.. _nic.at: http://www.nic.at/
+.. _easyname.at: http://www.easyname.at/
 
-Network Maps
-............
-http://www.peer1.com/blog/2011/03/map-of-the-internet-2011/
-http://cheleby.cse.unr.edu/:
-http://www.netdimes.org/new/?q=node/52
+Webserver
+---------
 
+* Sind Computer, die öffentlich im Internet erreichbar sind und bestimmte Dienste
+  für Besucher (Clients) bereitstellen, die von denen abgerufen werden können.
+* Werden meist von Firmen als Kostenpflichtiges Service angeboten. Bsp:
+  hetzner.de, inode.at, ... Aber auch mur.at, dazu später mehr.
+* Bieten Speicherplatz für Webseiten in Form von HTML Dateien, aber oft auch 
+  Datenbanksysteme, Programmierumgebungen für Webseiten mit dynamischen
+  Inhalten, Zugriffsstatistik Analysesoftware, etc.
+* Zugriffsmöglichkeit über (S)FTP und/oder SSH.
 
 
 HTML Einführung
@@ -223,12 +234,10 @@ Static HTML
 
 
 
-through the web publishing
+Through The Web Publishing
 ==========================
 
-# --> cms vendor map
-
-vorteil gegenüber direktem html publishing:
+Vorteile gegenüber direktem HTML Publishing:
 
 * HTML Kenntnisse sind keine Voraussetzung
 * Einheitliches Design über alle Inhalte hinweg
@@ -242,122 +251,126 @@ vorteil gegenüber direktem html publishing:
     * ...
 
 
-wiki systeme
+Wiki Systeme
 ------------
-pros:
-    * einfache, unbürokratische kolloboration
-    * schnelles erstellen von verlinkten dokumenten
-    * ideal zur projektorganisation, ideenfindung, wissensmanagement
 
-cons:
-    * wenig ausgeprägt bei rechtemanagement und eingabehilfen
-    * inhalte können nicht hierarchisch organisiert werden
-    * datenbankapplikationen können nicht umgesetzt werden
+**Vorteile**
 
-examples:
-    * moinmoin - http://moinmo.in/
-        + keine datenbank notwendig
-        + viele eingabeformate (bsp reStructuredText)
-        + bewährt sich seit jahren als mur.at wiki system
-    * dokuwiki - http://www.dokuwiki.org/
-        + bewährt sich seit jahren im spektral als wiki system
-    * mediawiki - http://www.mediawiki.org/
-        + wiki system des weltweit größten wikis: wikipedia.org
-    * ... diverse weitere + als plugins für cms systeme
+* Einfache, unbürokratische Kolloboration
+* Schnelles Erstellen von verlinkten Dokumenten
+* Ideal zur Projektorganisation, Ideenfindung, Wissensmanagement
 
-    * first ever created wiki: http://c2.com/cgi/wiki?FrontPage
+**Nachteile**
+
+* Wenig ausgeprägt bei Rechtemanagement und Eingabehilfen
+* Inhalte können nicht hierarchisch organisiert werden
+* Datenbankapplikationen können nicht umgesetzt werden
+
+**Beispiele**
+
+* Moin Moin - http://moinmo.in/
+| + keine datenbank notwendig
+| + viele eingabeformate (bsp reStructuredText)
+| + bewährt sich seit jahren als mur.at wiki system
+
+* Dokuwiki - http://www.dokuwiki.org/
+| + bewährt sich seit jahren im spektral als wiki system
+
+* mediawiki - http://www.mediawiki.org/
+| + wiki system des weltweit größten wikis: wikipedia.org
+
+* ... diverse weitere + als plugins für cms systeme
+* first ever created wiki: http://c2.com/cgi/wiki?FrontPage
 
 
-blog systeme
+Blog systeme
 ------------
-pros:
+**Vorteile**
 
-    * optimiert für das publizieren von nachrichten
-    * viele community features
+* Optimiert für das Publizieren von Nachrichten
+* Viele Community features (Kommentare, Backlinks, ...)
 
-        * kommentare
-        * backlinks
+**Nachteile**
 
-cons:
-    die optimierung als blog system schränkt andere einsatzzwecke etwas ein
+* Die Optimierung als Blog System schränkt andere Einsatzzwecke etwas ein
 
-examples:
+**Beispiele**
 
-    * wordpress - http://wordpress.org/
+* WordPress - http://wordpress.org/
+| + Open Source
+| + Bekanntestes Blog System mit vielen Features
+| + Einfache Bedienung
+| + Auch als CMS System einsetzbar
+| + Viele Plugins
+| - als cms system weniger gut brauchbar
+|  mehr info: http://en.wikipedia.org/wiki/WordPress
+|  gratis blogs: http://wordpress.com/
 
-        + bekanntestes blog system mit vielen features
-        + einfache bedienung
-        + auch als cms system einsetzbar
+* Moveable Type - http://www.movabletype.org/
+| + Open Source
+| + Bekanntes Blog System
+| + TypePad basiert darauf: http://en.wikipedia.org/wiki/TypePad
+| mehr info: http://en.wikipedia.org/wiki/Movable_Type
 
-        - als cms system weniger gut brauchbar
+* zine - http://zine.pocoo.org/
+| + blog system in python
+| + geschrieben vom grazer armin ronnacher
 
-        * mehr info: http://en.wikipedia.org/wiki/WordPress
-        * gratis blogs: http://wordpress.com/
 
-    * moveable type - http://www.movabletype.org/
-
-        + bekanntes blog system
-        + TypePad basiert darauf: http://en.wikipedia.org/wiki/TypePad
-        
-        * hr info: http://en.wikipedia.org/wiki/Movable_Type
-
-    * zine - http://zine.pocoo.org/
-
-        + blog system in python
-        + geschrieben vom grazer armin ronnacher
-
-cms systeme
+CMS Systeme
 -----------
-what's that?
+**what's That?**
 
-    * Content Management System
-    * Wichtige Bestandteile:
+* Content Management System
+* Wichtige Bestandteile:
 
-        * Theming Engine (Design der Website)
-        * Verschiedene Inhaltstypen
+    * Theming Engine (Design der Website)
+    * Verschiedene Inhaltstypen
+    * Rechteverwaltung
 
-examples:
+**Beispiele**
 
-    * joomla
+* plone - http://plone.org/
+| Ein in der Programmiersprache Python geschriebenes professionelles CMS.
+| + sehr einfache bedienung
+| + robustes technisches backend
+| + wenige bekanne sicherheitslücken (u.a. python, zope)
+| + sehr gut erweiterbar
+| - geringe verbreitung
+| - relativ komplizierte technik
+| - relativ hohe kosten für hosting
 
-        + sehr weit verbreitet
-        + relativ einfache bedienung
+* joomla
+| PHP
+| + sehr weit verbreitet
+| + relativ einfache bedienung
+| - schlecht wartbar und erweiterbar
 
-        - schlecht wartbar und erweiterbar
+* drupal
+| PHP
+| + weit verbreitet mit vielen community features
+| + gut wartbar und erweiterbar
 
-    * drupal
-
-        + weit verbreitet mit vielen community features
-        + gut wartbar und erweiterbar
-
-    * wordpress
-
-        + weit verbreitet
-        + wird immer öfter als cms system genutzt
-
-        - als cms system eingeschränkt geeignet
-
-    * plone
-
-        + sehr einfache bedienung
-        + robustes technisches backend
-        + wenige bekanne sicherheitslücken (u.a. python, zope)
-        + sehr gut erweiterbar
-
-        - geringe verbreitung
-        - relativ komplizierte technik
-        - relativ hohe kosten für hosting
-
-
-Service Abusment
-================
-
-* Dropbox als Hosting Provider: https://dl.dropbox.com/u/1280050/index.html
-* Github als Hosting Provider
+* wordpress
+| PHP
+| + weit verbreitet
+| + wird immer öfter als cms system genutzt
+| - als cms system eingeschränkt geeignet
 
 
 Software Verzeichnis
 ====================
+
+FTP Clients
+-----------
+
+Filezilla
+.........
+| Open Source
+| Linux, Windows und Mac OS X
+| http://filezilla-project.org/
+| http://en.wikipedia.org/wiki/FileZilla
+
 
 Text-Editoren
 -------------
