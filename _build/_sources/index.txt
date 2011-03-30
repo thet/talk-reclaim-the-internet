@@ -114,12 +114,13 @@ Webserver
 * Sind Computer, die öffentlich im Internet erreichbar sind und bestimmte Dienste
   für Besucher (Clients) bereitstellen, die von denen abgerufen werden können.
 * Werden meist von Firmen als Kostenpflichtiges Service angeboten. Bsp:
-  hetzner.de, inode.at, ... Aber auch mur.at, dazu später mehr.
+  hetzner.de, inode.at, ... Aber auch `mur.at`_, dazu später mehr.
 * Bieten Speicherplatz für Webseiten in Form von HTML Dateien, aber oft auch 
   Datenbanksysteme, Programmierumgebungen für Webseiten mit dynamischen
   Inhalten, Zugriffsstatistik Analysesoftware, etc.
 * Zugriffsmöglichkeit über (S)FTP und/oder SSH.
 
+.. _mur.at: https://wiki.mur.at/
 
 HTML Einführung
 ===============
