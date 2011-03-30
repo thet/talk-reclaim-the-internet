@@ -37,18 +37,116 @@
         <div class="bodywrapper">
           <div class="body">
             
-  <div class="section" id="reclaim-the-internet">
+  <p><a class="reference external" href="http://www.opte.org/maps/">http://www.opte.org/maps/</a>
+what is the internet, anyway? <a class="reference external" href="http://www.youtube.com/watch?v=TmyN4CxauaM">http://www.youtube.com/watch?v=TmyN4CxauaM</a></p>
+<div class="section" id="reclaim-the-internet">
 <h1>Reclaim the Internet!<a class="headerlink" href="#reclaim-the-internet" title="Permalink to this headline">¶</a></h1>
 <p>Vortrag und Diskussion über Möglichkeiten des Webpublishing.</p>
-<p>Mehr info über das Projekt Backpackjournalism: <a class="reference external" href="http://wikis.spektral.at/bpj/">http://wikis.spektral.at/bpj/</a></p>
+<p>Download der Materialien: <a class="reference external" href="https://github.com/thet/talk-reclaim-the-internet">https://github.com/thet/talk-reclaim-the-internet</a>
+Mehr info über das Projekt Backpackjournalism: <a class="reference external" href="http://wikis.spektral.at/bpj/">http://wikis.spektral.at/bpj/</a></p>
 <p>Inhalt:</p>
 <ul class="simple">
 </ul>
 </div>
-<div class="section" id="html-einfuhrung">
-<h1>HTML Einführung<a class="headerlink" href="#html-einfuhrung" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="technology-track">
+<h1>Technology Track<a class="headerlink" href="#technology-track" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="das-internet">
+<h2>Das Internet<a class="headerlink" href="#das-internet" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="geschichte">
-<h2>Geschichte<a class="headerlink" href="#geschichte" title="Permalink to this headline">¶</a></h2>
+<h3>Geschichte<a class="headerlink" href="#geschichte" title="Permalink to this headline">¶</a></h3>
+<ul>
+<li><p class="first">Vorläufer vernetzter Kommunikation</p>
+<ul class="simple">
+<li>Telegraphen System, Telefon</li>
+<li><a class="reference external" href="http://de.wikipedia.org/wiki/Fernschreiber">Fernschreiber</a>, Fax</li>
+<li><a class="reference external" href="http://de.wikipedia.org/wiki/Bildschirmtext">BTX</a>, <a class="reference external" href="http://de.wikipedia.org/wiki/Teletext">Teletext</a></li>
+</ul>
+</li>
+<li><p class="first">60er Jahre: ARPA Forschungsprojekt zur effizienten verteilten Nutzung von
+Rechenleistung.</p>
+</li>
+<li><p class="first">Start des Internet: 29.10.1969 - Vernetzung von vier Großrechnern
+amerikanischer Universitäten und Übertragung der Botschaft &#8220;LO&#8221;.</p>
+<blockquote>
+<ul class="simple">
+<li>1971: 14 Knoten</li>
+<li>1975: 61 Knoten</li>
+<li>1988: 60.000 Knoten</li>
+<li>2000: 100.000.000 Knoten</li>
+<li>2007: 500.000.000 Knoten</li>
+<li>...</li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Mehr Informationen auf Wikipedia: <a class="reference external" href="http://de.wikipedia.org/wiki/Geschichte_des_Internets">Geschichte des Internets</a> und <a class="reference external" href="http://en.wikipedia.org/wiki/History_of_the_Internet">History of the Internet</a></p>
+</li>
+</ul>
+</div>
+<div class="section" id="aufbau">
+<h3>Aufbau<a class="headerlink" href="#aufbau" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="internet-protocol">
+<h4>Internet Protocol<a class="headerlink" href="#internet-protocol" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first">Jeder Knoten hat eine eindeutige Netzwerkadresse, die</p>
+<p><a class="reference external" href="http://de.wikipedia.org/wiki/IP-Adresse">IP-Adresse</a>.
+Wobei ... : Subnetzte (NAT - Network Adress Translation) sind sehr häufig.
+Bei den meisten privaten Internetanschlüssen und in Firmennetzen kommen
+reservierte Adresspools zur internen Verwendung (10.x.x.x, 192.168.x.x) zum Einsatz. Nach aussen
+hin - für das Internet - wird nur die IP Adresse des letzten Knotens
+verwendet, der die Vermittlung zwischen Internet und Intranet herstellt
+(Router).</p>
+</li>
+<li><p class="first"><a class="reference external" href="http://en.wikipedia.org/wiki/IPv4">IPv4</a></p>
+<blockquote>
+<ul class="simple">
+<li>bsp 195.58.172.219</li>
+<li>32bit, 4 Byte, max 255.255.255.255 = 2^32 = 4.294.967.296 Möglichkeiten</li>
+<li>Adresspool ist endlich. Voraussichtlicher Termin, an dem die letzte IPv4
+Adresse vergeben wird: <a class="reference external" href="http://inetcore.com/project/ipv4ec/index_en.html">28.April 2011</a></li>
+</ul>
+</blockquote>
+</li>
+<li><p class="first">Lösung: <a class="reference external" href="http://en.wikipedia.org/wiki/IPv6">IPv6</a></p>
+<blockquote>
+<ul class="simple">
+<li>bsp: 2001:0db8:85a3:08d3:1319:8a2e:0370:7344</li>
+<li>128bit, 2^128, max: 3.4×10^38, 340.282.366.920.938.463.463.374.607.431.768.211.456</li>
+<li>&#8220;jeden Quadratmillimeter der Erdoberfläche mindestens 665.570.793.348.866.944 (= 6,65 · 10^17) IP-Adressen&#8221;</li>
+<li>Notwendige Lösung, noch nicht weit verbreitet. Verbreitung scheitert in
+erster Linie an Server, die IPv6 nicht unterstützen.</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="dns-domain-name-system">
+<h4>DNS - Domain Name System<a class="headerlink" href="#dns-domain-name-system" title="Permalink to this headline">¶</a></h4>
+<ul>
+<li><p class="first"><a class="reference external" href="http://de.wikipedia.org/wiki/Domain_Name_System">DNS - Domain Name System</a></p>
+<blockquote>
+<ul class="simple">
+<li>Ordnet registrierten Computern einen Namen zu.</li>
+<li>Namen sind einfacher zu Merken als IP Adressen.</li>
+<li>Erlaubt durch &#8220;Virtual Hosting&#8221; auf einem Computer mit der selben IP
+Adresse mehrere Dienste laufen zu lassen, die der Server durch den
+unterschiedlichen Namen unter auseinander halten kann.</li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</div>
+<div class="section" id="network-maps">
+<h4>Network Maps<a class="headerlink" href="#network-maps" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="http://www.peer1.com/blog/2011/03/map-of-the-internet-2011/">http://www.peer1.com/blog/2011/03/map-of-the-internet-2011/</a>
+<a class="reference external" href="http://cheleby.cse.unr.edu/">http://cheleby.cse.unr.edu/</a>:
+<a class="reference external" href="http://www.netdimes.org/new/?q=node/52">http://www.netdimes.org/new/?q=node/52</a></p>
+</div>
+</div>
+</div>
+<div class="section" id="html-einfuhrung">
+<h2>HTML Einführung<a class="headerlink" href="#html-einfuhrung" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="id2">
+<h3>Geschichte<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>HyperText Markup Language</li>
 <li>Von Tim Berners-Lee, CERN 1990</li>
@@ -57,8 +155,16 @@
 Dokumenten.</li>
 </ul>
 </div>
+<div class="section" id="allgemein">
+<h3>Allgemein<a class="headerlink" href="#allgemein" title="Permalink to this headline">¶</a></h3>
+<ul class="simple">
+<li>Strukturierung von Inhalten.</li>
+<li>Struktur- und Formatelemente teilweise gemischt.</li>
+<li>Weniger geeignet, um Texte zu entwickeln.</li>
+</ul>
+</div>
 <div class="section" id="syntax-allgemein">
-<h2>Syntax Allgemein<a class="headerlink" href="#syntax-allgemein" title="Permalink to this headline">¶</a></h2>
+<h3>Syntax Allgemein<a class="headerlink" href="#syntax-allgemein" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
 <li>&lt;tag attribute=&#8221;value&#8221;&gt;content&lt;/tag&gt;</li>
 <li>Elemente (Tags) können hierarchisch strukturiert werden.</li>
@@ -68,7 +174,7 @@ beim öffnen geschlossen (&lt;tag /&gt;).</li>
 </ul>
 </div>
 <div class="section" id="syntax-uberblick">
-<h2>Syntax Überblick<a class="headerlink" href="#syntax-uberblick" title="Permalink to this headline">¶</a></h2>
+<h3>Syntax Überblick<a class="headerlink" href="#syntax-uberblick" title="Permalink to this headline">¶</a></h3>
 <ul>
 <li><p class="first">Dokumentenstrukturelemente</p>
 <blockquote>
@@ -113,27 +219,61 @@ beim öffnen geschlossen (&lt;tag /&gt;).</li>
 </ul>
 </div>
 <div class="section" id="syntax-beispiel">
-<h2>Syntax Beispiel<a class="headerlink" href="#syntax-beispiel" title="Permalink to this headline">¶</a></h2>
+<h3>Syntax Beispiel<a class="headerlink" href="#syntax-beispiel" title="Permalink to this headline">¶</a></h3>
 <p>Siehe <a class="reference external" href="../html-example/index.html">html-example/index.html</a></p>
 </div>
-<div class="section" id="info">
-<h2>info<a class="headerlink" href="#info" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="andere-markupsprachen">
+<h3>Andere Markupsprachen<a class="headerlink" href="#andere-markupsprachen" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li><a class="reference external" href="http://en.wikipedia.org/wiki/HTML">http://en.wikipedia.org/wiki/HTML</a></li>
-<li><a class="reference external" href="http://en.wikipedia.org/wiki/HTML_element">http://en.wikipedia.org/wiki/HTML_element</a></li>
-<li><a class="reference external" href="http://de.selfhtml.org/">http://de.selfhtml.org/</a></li>
-<li><a class="reference external" href="http://diveintohtml5.org/">http://diveintohtml5.org/</a></li>
+<li>Wiki Syntax</li>
+<li>ReStructuredText<ul>
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/ReStructuredText">http://en.wikipedia.org/wiki/ReStructuredText</a></li>
+<li><a class="reference external" href="http://docutils.sourceforge.net/rst.html">http://docutils.sourceforge.net/rst.html</a></li>
+<li><a class="reference external" href="http://sphinx.pocoo.org/rest.html">http://sphinx.pocoo.org/rest.html</a></li>
+</ul>
+</li>
+<li>Markdown<ul>
+<li><a class="reference external" href="http://en.wikipedia.org/wiki/Markdown">http://en.wikipedia.org/wiki/Markdown</a></li>
+</ul>
+</li>
 </ul>
 </div>
 <div class="section" id="entwicklungshilfen">
-<h2>Entwicklungshilfen<a class="headerlink" href="#entwicklungshilfen" title="Permalink to this headline">¶</a></h2>
+<h3>Entwicklungshilfen<a class="headerlink" href="#entwicklungshilfen" title="Permalink to this headline">¶</a></h3>
 <ul class="simple">
-<li>Firebug für Firefox <a class="reference external" href="http://getfirebug.com/">http://getfirebug.com/</a></li>
+<li>Firebug für Firefox: <a class="reference external" href="http://getfirebug.com/">http://getfirebug.com/</a></li>
+<li>HTML validation check: <a class="reference external" href="http://validator.w3.org/">http://validator.w3.org/</a></li>
+<li>HTML im allgemeinen, englisch: <a class="reference external" href="http://en.wikipedia.org/wiki/HTML">http://en.wikipedia.org/wiki/HTML</a></li>
+<li>HTML im allgemeinen, deutsch: <a class="reference external" href="http://en.wikipedia.org/wiki/HTML_element">http://en.wikipedia.org/wiki/HTML_element</a></li>
+<li>HTML4 im selbststudium: <a class="reference external" href="http://de.selfhtml.org/">http://de.selfhtml.org/</a></li>
+<li>Überblick über HTML5: <a class="reference external" href="http://diveintohtml5.org/">http://diveintohtml5.org/</a></li>
 </ul>
 </div>
 </div>
+<div class="section" id="css-cascading-style-sheets">
+<h2>CSS - Cascading Style Sheets<a class="headerlink" href="#css-cascading-style-sheets" title="Permalink to this headline">¶</a></h2>
+<p>CSS validation check: <a class="reference external" href="http://jigsaw.w3.org/css-validator/">http://jigsaw.w3.org/css-validator/</a></p>
+</div>
+</div>
+<div class="section" id="create-a-website">
+<h1>Create a Website!<a class="headerlink" href="#create-a-website" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="static-html">
+<h2>Static HTML<a class="headerlink" href="#static-html" title="Permalink to this headline">¶</a></h2>
+<ul>
+<li><p class="first">Tools</p>
+<blockquote>
+<ul class="simple">
+<li>KompoZer: <a class="reference external" href="http://www.kompozer.net/">http://www.kompozer.net/</a></li>
+<li>BlueFish: <a class="reference external" href="http://bluefish.openoffice.nl/">http://bluefish.openoffice.nl/</a></li>
+<li>Abiword: <a class="reference external" href="http://en.wikipedia.org/wiki/AbiWord">http://en.wikipedia.org/wiki/AbiWord</a></li>
+<li><a class="reference external" href="https://sites.google.com/site/thetetet/">https://sites.google.com/site/thetetet/</a></li>
+</ul>
+</blockquote>
+</li>
+</ul>
+</div>
 <div class="section" id="through-the-web-publishing">
-<h1>through the web publishing<a class="headerlink" href="#through-the-web-publishing" title="Permalink to this headline">¶</a></h1>
+<h2>through the web publishing<a class="headerlink" href="#through-the-web-publishing" title="Permalink to this headline">¶</a></h2>
 <p># &#8211;&gt; cms vendor map</p>
 <p>vorteil gegenüber direktem html publishing:</p>
 <ul>
@@ -156,7 +296,7 @@ beim öffnen geschlossen (&lt;tag /&gt;).</li>
 </li>
 </ul>
 <div class="section" id="wiki-systeme">
-<h2>wiki systeme<a class="headerlink" href="#wiki-systeme" title="Permalink to this headline">¶</a></h2>
+<h3>wiki systeme<a class="headerlink" href="#wiki-systeme" title="Permalink to this headline">¶</a></h3>
 <dl class="docutils">
 <dt>pros:</dt>
 <dd><ul class="first last simple">
@@ -209,30 +349,32 @@ beim öffnen geschlossen (&lt;tag /&gt;).</li>
 </dl>
 </div>
 <div class="section" id="blog-systeme">
-<h2>blog systeme<a class="headerlink" href="#blog-systeme" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>pros:</dt>
-<dd><ul class="first last">
+<h3>blog systeme<a class="headerlink" href="#blog-systeme" title="Permalink to this headline">¶</a></h3>
+<p>pros:</p>
+<blockquote>
+<ul>
 <li><p class="first">optimiert für das publizieren von nachrichten</p>
 </li>
-<li><dl class="first docutils">
-<dt>viele community features</dt>
-<dd><ul class="first last simple">
+<li><p class="first">viele community features</p>
+<blockquote>
+<ul class="simple">
 <li>kommentare</li>
 <li>backlinks</li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
 </ul>
-</dd>
+</blockquote>
+<dl class="docutils">
 <dt>cons:</dt>
 <dd>die optimierung als blog system schränkt andere einsatzzwecke etwas ein</dd>
-<dt>examples:</dt>
-<dd><ul class="first last">
-<li><dl class="first docutils">
-<dt>wordpress - <a class="reference external" href="http://wordpress.org/">http://wordpress.org/</a></dt>
-<dd><ul class="first simple">
+</dl>
+<p>examples:</p>
+<blockquote>
+<ul>
+<li><p class="first">wordpress - <a class="reference external" href="http://wordpress.org/">http://wordpress.org/</a></p>
+<blockquote>
+<ul class="simple">
 <li>bekanntestes blog system mit vielen features</li>
 <li>einfache bedienung</li>
 <li>auch als cms system einsetzbar</li>
@@ -240,109 +382,327 @@ beim öffnen geschlossen (&lt;tag /&gt;).</li>
 <ul class="simple">
 <li>als cms system weniger gut brauchbar</li>
 </ul>
-<ul class="last simple">
+<ul class="simple">
 <li>mehr info: <a class="reference external" href="http://en.wikipedia.org/wiki/WordPress">http://en.wikipedia.org/wiki/WordPress</a></li>
 <li>gratis blogs: <a class="reference external" href="http://wordpress.com/">http://wordpress.com/</a></li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
-<li><dl class="first docutils">
-<dt>moveable type - <a class="reference external" href="http://www.movabletype.org/">http://www.movabletype.org/</a></dt>
-<dd><ul class="first simple">
+<li><p class="first">moveable type - <a class="reference external" href="http://www.movabletype.org/">http://www.movabletype.org/</a></p>
+<blockquote>
+<ul class="simple">
 <li>bekanntes blog system</li>
+<li>TypePad basiert darauf: <a class="reference external" href="http://en.wikipedia.org/wiki/TypePad">http://en.wikipedia.org/wiki/TypePad</a></li>
 </ul>
-<ul class="last simple">
+<ul class="simple">
 <li>hr info: <a class="reference external" href="http://en.wikipedia.org/wiki/Movable_Type">http://en.wikipedia.org/wiki/Movable_Type</a></li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
-<li><dl class="first docutils">
-<dt>zine - <a class="reference external" href="http://zine.pocoo.org/">http://zine.pocoo.org/</a></dt>
-<dd><ul class="first last simple">
+<li><p class="first">zine - <a class="reference external" href="http://zine.pocoo.org/">http://zine.pocoo.org/</a></p>
+<blockquote>
+<ul class="simple">
 <li>blog system in python</li>
 <li>geschrieben vom grazer armin ronnacher</li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </div>
 <div class="section" id="cms-systeme">
-<h2>cms systeme<a class="headerlink" href="#cms-systeme" title="Permalink to this headline">¶</a></h2>
-<dl class="docutils">
-<dt>what&#8217;s that?</dt>
-<dd><ul class="first last">
+<h3>cms systeme<a class="headerlink" href="#cms-systeme" title="Permalink to this headline">¶</a></h3>
+<p>what&#8217;s that?</p>
+<blockquote>
+<ul>
 <li><p class="first">Content Management System</p>
 </li>
-<li><dl class="first docutils">
-<dt>Wichtige Bestandteile:</dt>
-<dd><ul class="first last simple">
+<li><p class="first">Wichtige Bestandteile:</p>
+<blockquote>
+<ul class="simple">
 <li>Theming Engine (Design der Website)</li>
 <li>Verschiedene Inhaltstypen</li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
 </ul>
-</dd>
-<dt>examples:</dt>
-<dd><ul class="first last">
-<li><dl class="first docutils">
-<dt>joomla</dt>
-<dd><ul class="first simple">
+</blockquote>
+<p>examples:</p>
+<blockquote>
+<ul>
+<li><p class="first">joomla</p>
+<blockquote>
+<ul class="simple">
 <li>sehr weit verbreitet</li>
 <li>relativ einfache bedienung</li>
 </ul>
-<ul class="last simple">
+<ul class="simple">
 <li>schlecht wartbar und erweiterbar</li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
-<li><dl class="first docutils">
-<dt>drupal</dt>
-<dd><ul class="first last simple">
+<li><p class="first">drupal</p>
+<blockquote>
+<ul class="simple">
 <li>weit verbreitet mit vielen community features</li>
 <li>gut wartbar und erweiterbar</li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
-<li><dl class="first docutils">
-<dt>wordpress</dt>
-<dd><ul class="first simple">
+<li><p class="first">wordpress</p>
+<blockquote>
+<ul class="simple">
 <li>weit verbreitet</li>
 <li>wird immer öfter als cms system genutzt</li>
 </ul>
-<ul class="last simple">
+<ul class="simple">
 <li>als cms system eingeschränkt geeignet</li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
-<li><dl class="first docutils">
-<dt>plone</dt>
-<dd><ul class="first simple">
+<li><p class="first">plone</p>
+<blockquote>
+<ul class="simple">
 <li>sehr einfache bedienung</li>
 <li>robustes technisches backend</li>
 <li>wenige bekanne sicherheitslücken (u.a. python, zope)</li>
 <li>sehr gut erweiterbar</li>
 </ul>
-<ul class="last simple">
+<ul class="simple">
 <li>geringe verbreitung</li>
 <li>relativ komplizierte technik</li>
 <li>relativ hohe kosten für hosting</li>
 </ul>
-</dd>
-</dl>
+</blockquote>
 </li>
 </ul>
-</dd>
-</dl>
+</blockquote>
+</div>
+</div>
+<div class="section" id="service-abusment">
+<h2>Service Abusment<a class="headerlink" href="#service-abusment" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li>Dropbox als Hosting Provider: <a class="reference external" href="https://dl.dropbox.com/u/1280050/index.html">https://dl.dropbox.com/u/1280050/index.html</a></li>
+<li>Github als Hosting Provider</li>
+</ul>
+</div>
+<div class="section" id="software-verzeichnis">
+<h2>Software Verzeichnis<a class="headerlink" href="#software-verzeichnis" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="text-editoren">
+<h3>Text-Editoren<a class="headerlink" href="#text-editoren" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="gedit">
+<h4>Gedit<a class="headerlink" href="#gedit" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">Linux</div>
+<div class="line"><a class="reference external" href="http://projects.gnome.org/gedit/">http://projects.gnome.org/gedit/</a></div>
+</div>
+</div>
+<div class="section" id="notepad">
+<h4>Notepad++<a class="headerlink" href="#notepad" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">Windows</div>
+<div class="line"><a class="reference external" href="http://notepad-plus-plus.org/">http://notepad-plus-plus.org/</a></div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Notepad%2B%2B">http://en.wikipedia.org/wiki/Notepad%2B%2B</a></div>
+</div>
+</div>
+<div class="section" id="textmate">
+<h4>TextMate<a class="headerlink" href="#textmate" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Kommerziell</div>
+<div class="line">OSX</div>
+<div class="line"><a class="reference external" href="http://macromates.com/">http://macromates.com/</a></div>
+</div>
+</div>
+<div class="section" id="vim-oder-emacs">
+<h4>Vim oder Emacs<a class="headerlink" href="#vim-oder-emacs" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Alle Plattformen. Editor für Programmierer.</div>
+</div>
+</div>
+</div>
+<div class="section" id="online-wysiwyg-what-you-see-is-what-you-get-editoren">
+<h3>Online WYSIWYG (What You See is What You Get) Editoren<a class="headerlink" href="#online-wysiwyg-what-you-see-is-what-you-get-editoren" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="what-you-see-is-what-you-mean-editor">
+<h4>&#8220;What You See Is What You Mean&#8221; Editor<a class="headerlink" href="#what-you-see-is-what-you-mean-editor" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">Fokus auf Struktur, nicht Design. Eignet sich besser für Semantik.</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/WYMeditor">http://en.wikipedia.org/wiki/WYMeditor</a></div>
+<div class="line"><a class="reference external" href="http://www.wymeditor.org/demo/">http://www.wymeditor.org/demo/</a></div>
+</div>
+</div>
+<div class="section" id="tinymce">
+<h4>TinyMCE<a class="headerlink" href="#tinymce" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">Beliebter Online Editor zum Formatieren von Texten in CMS Systemen. Unter
+anderem in Plone und WordPress zu finden.</div>
+<div class="line"><a class="reference external" href="http://tinymce.moxiecode.com/">http://tinymce.moxiecode.com/</a></div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/TinyMCE">http://en.wikipedia.org/wiki/TinyMCE</a></div>
+</div>
+</div>
+<div class="section" id="aloha-editor">
+<h4>Aloha Editor<a class="headerlink" href="#aloha-editor" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Next Generation HTML 5 basierter Online Editor.</div>
+<div class="line"><a class="reference external" href="http://www.aloha-editor.org/">http://www.aloha-editor.org/</a></div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Aloha_Editor">http://en.wikipedia.org/wiki/Aloha_Editor</a></div>
+</div>
+</div>
+<div class="section" id="ckeditor">
+<h4>CKEditor<a class="headerlink" href="#ckeditor" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source.</div>
+<div class="line">Ehemals FCKEditor.</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/CKEditor">http://en.wikipedia.org/wiki/CKEditor</a></div>
+<div class="line"><a class="reference external" href="http://ckeditor.com/">http://ckeditor.com/</a></div>
+</div>
+</div>
+<div class="section" id="kupu">
+<h4>Kupu<a class="headerlink" href="#kupu" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source.</div>
+<div class="line">Ehemaliger Standardeditor unter Plone.</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Kupu">http://en.wikipedia.org/wiki/Kupu</a></div>
+</div>
+</div>
+</div>
+<div class="section" id="html-editoren">
+<h3>HTML Editoren<a class="headerlink" href="#html-editoren" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="bluefish">
+<h4>BlueFish<a class="headerlink" href="#bluefish" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">HTML Text Editor, ohne Graphische Editierung. Unterstützt aber gut beim</div>
+<div class="line">Erstellen von HTML Layouts.</div>
+<div class="line"><a class="reference external" href="http://bluefish.openoffice.nl/">http://bluefish.openoffice.nl/</a></div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Bluefish_%28text_editor%29">http://en.wikipedia.org/wiki/Bluefish_%28text_editor%29</a></div>
+</div>
+</div>
+<div class="section" id="amaya">
+<h4>Amaya<a class="headerlink" href="#amaya" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source, W3C</div>
+<div class="line">Visueller HTML Editor. Wird vom W3C zum Testen neuer Webstandards verwendet.</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Amaya_%28web_browser%29">http://en.wikipedia.org/wiki/Amaya_%28web_browser%29</a></div>
+</div>
+</div>
+<div class="section" id="kompozer">
+<h4>KompoZer<a class="headerlink" href="#kompozer" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">Ehemals Nvu, vormals Netscape</div>
+<div class="line"><a class="reference external" href="http://www.kompozer.net/">http://www.kompozer.net/</a></div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/KompoZer">http://en.wikipedia.org/wiki/KompoZer</a></div>
+</div>
+</div>
+<div class="section" id="bluegriffon">
+<h4>BlueGriffon<a class="headerlink" href="#bluegriffon" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source, in Beta Phase</div>
+<div class="line">Nvu Nachfolger</div>
+<div class="line">Unterstützt HTML5, CSS3, SVG und andere aktuelle Standards.</div>
+<div class="line"><a class="reference external" href="http://bluegriffon.org/">http://bluegriffon.org/</a></div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/BlueGriffon">http://en.wikipedia.org/wiki/BlueGriffon</a></div>
+</div>
+</div>
+<div class="section" id="adobe-dreamweaver">
+<h4>Adobe Dreamweaver<a class="headerlink" href="#adobe-dreamweaver" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Kommerziell</div>
+<div class="line">Vormals Macromedia Dreamweaver, Ersetzt Adobe GoLive.</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Adobe_Dreamweaver">http://en.wikipedia.org/wiki/Adobe_Dreamweaver</a></div>
+</div>
+</div>
+<div class="section" id="microsoft-expression-web">
+<h4>Microsoft Expression Web<a class="headerlink" href="#microsoft-expression-web" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Kommerziell</div>
+<div class="line">Ersetzt Microsoft FrontPage</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Microsoft_Expression_Web">http://en.wikipedia.org/wiki/Microsoft_Expression_Web</a></div>
+</div>
+</div>
+<div class="section" id="microsoft-visual-web-developer">
+<h4>Microsoft Visual Web Developer<a class="headerlink" href="#microsoft-visual-web-developer" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Kommerziell, aber kostenlos</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Microsoft_Visual_Web_Developer#Visual_Web_Developer_Express">http://en.wikipedia.org/wiki/Microsoft_Visual_Web_Developer#Visual_Web_Developer_Express</a></div>
+</div>
+</div>
+<div class="section" id="netobjects-fusion">
+<h4>NetObjects Fusion<a class="headerlink" href="#netobjects-fusion" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Früher und einfach zu bedienender HTML Editor</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/NetObjects_Fusion">http://en.wikipedia.org/wiki/NetObjects_Fusion</a></div>
+</div>
+</div>
+</div>
+<div class="section" id="office-suites">
+<h3>Office Suites<a class="headerlink" href="#office-suites" title="Permalink to this headline">¶</a></h3>
+<p>Die meisten Office Programme können Dokumente als HTML Seiten speichern. Da
+Microsoft Office viele eigene HTML Erweiterungen verwendet, empfiehlt es sich,
+auf eine Freie Office Variante wie Abiword oder OpenOffice / Libre Office
+zurückzugreifen.</p>
+<div class="section" id="abiword">
+<h4>Abiword<a class="headerlink" href="#abiword" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">Einfaches aber trotzdem genügend umfangreiches Office Packet.</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/AbiWord">http://en.wikipedia.org/wiki/AbiWord</a></div>
+</div>
+</div>
+<div class="section" id="openoffice-libreoffice">
+<h4>OpenOffice / LibreOffice<a class="headerlink" href="#openoffice-libreoffice" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">Microsoft Office Alternative. LibreOffice ist eine Abspaltung von
+OpenOffice, welches von Oracle gekauft wurde und ein Entwicklungsstreit
+ausgebrochen ist. LibreOffice wird vermutlich bald relevanter als
+OpenOffice werden.</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/OpenOffice.org">http://en.wikipedia.org/wiki/OpenOffice.org</a></div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/LibreOffice">http://en.wikipedia.org/wiki/LibreOffice</a></div>
+</div>
+</div>
+<div class="section" id="microsoft-office">
+<h4>Microsoft Office<a class="headerlink" href="#microsoft-office" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Kommerziell</div>
+<div class="line">Bekannteste Office Suite. Es existieren Varianten für Microsoft Windows und</div>
+<div class="line">Apple Mac OS X.</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Microsoft_Office">http://en.wikipedia.org/wiki/Microsoft_Office</a></div>
+</div>
+</div>
+<div class="section" id="koffice">
+<h4>KOffice<a class="headerlink" href="#koffice" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line">Open Source</div>
+<div class="line">KDE Office Suite</div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/KOffice">http://en.wikipedia.org/wiki/KOffice</a></div>
+</div>
+</div>
+</div>
+<div class="section" id="online-website-builder">
+<h3>Online Website Builder<a class="headerlink" href="#online-website-builder" title="Permalink to this headline">¶</a></h3>
+<div class="section" id="blogger">
+<h4>Blogger<a class="headerlink" href="#blogger" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line"><a class="reference external" href="http://www.blogger.com/">http://www.blogger.com/</a></div>
+<div class="line"><a class="reference external" href="http://en.wikipedia.org/wiki/Blogger_%28service%29">http://en.wikipedia.org/wiki/Blogger_%28service%29</a></div>
+</div>
+</div>
+<div class="section" id="google-sites">
+<h4>Google Sites<a class="headerlink" href="#google-sites" title="Permalink to this headline">¶</a></h4>
+<div class="line-block">
+<div class="line"><a class="reference external" href="https://sites.google.com/site/thetetet/">https://sites.google.com/site/thetetet/</a></div>
+</div>
+</div>
+<div class="section" id="squarespace">
+<h4>Squarespace<a class="headerlink" href="#squarespace" title="Permalink to this headline">¶</a></h4>
+<p><a class="reference external" href="http://www.squarespace.com/">http://www.squarespace.com/</a></p>
+</div>
+</div>
 </div>
 </div>
 
@@ -357,19 +717,81 @@ beim öffnen geschlossen (&lt;tag /&gt;).</li>
 <li><a class="reference external" href="#">Reclaim the Internet!</a><ul>
 </ul>
 </li>
-<li><a class="reference external" href="#html-einfuhrung">HTML Einführung</a><ul>
+<li><a class="reference external" href="#technology-track">Technology Track</a><ul>
+<li><a class="reference external" href="#das-internet">Das Internet</a><ul>
 <li><a class="reference external" href="#geschichte">Geschichte</a></li>
+<li><a class="reference external" href="#aufbau">Aufbau</a><ul>
+<li><a class="reference external" href="#internet-protocol">Internet Protocol</a></li>
+<li><a class="reference external" href="#dns-domain-name-system">DNS - Domain Name System</a></li>
+<li><a class="reference external" href="#network-maps">Network Maps</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference external" href="#html-einfuhrung">HTML Einführung</a><ul>
+<li><a class="reference external" href="#id2">Geschichte</a></li>
+<li><a class="reference external" href="#allgemein">Allgemein</a></li>
 <li><a class="reference external" href="#syntax-allgemein">Syntax Allgemein</a></li>
 <li><a class="reference external" href="#syntax-uberblick">Syntax Überblick</a></li>
 <li><a class="reference external" href="#syntax-beispiel">Syntax Beispiel</a></li>
-<li><a class="reference external" href="#info">info</a></li>
+<li><a class="reference external" href="#andere-markupsprachen">Andere Markupsprachen</a></li>
 <li><a class="reference external" href="#entwicklungshilfen">Entwicklungshilfen</a></li>
 </ul>
 </li>
+<li><a class="reference external" href="#css-cascading-style-sheets">CSS - Cascading Style Sheets</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#create-a-website">Create a Website!</a><ul>
+<li><a class="reference external" href="#static-html">Static HTML</a></li>
 <li><a class="reference external" href="#through-the-web-publishing">through the web publishing</a><ul>
 <li><a class="reference external" href="#wiki-systeme">wiki systeme</a></li>
 <li><a class="reference external" href="#blog-systeme">blog systeme</a></li>
 <li><a class="reference external" href="#cms-systeme">cms systeme</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#service-abusment">Service Abusment</a></li>
+<li><a class="reference external" href="#software-verzeichnis">Software Verzeichnis</a><ul>
+<li><a class="reference external" href="#text-editoren">Text-Editoren</a><ul>
+<li><a class="reference external" href="#gedit">Gedit</a></li>
+<li><a class="reference external" href="#notepad">Notepad++</a></li>
+<li><a class="reference external" href="#textmate">TextMate</a></li>
+<li><a class="reference external" href="#vim-oder-emacs">Vim oder Emacs</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#online-wysiwyg-what-you-see-is-what-you-get-editoren">Online WYSIWYG (What You See is What You Get) Editoren</a><ul>
+<li><a class="reference external" href="#what-you-see-is-what-you-mean-editor">&#8220;What You See Is What You Mean&#8221; Editor</a></li>
+<li><a class="reference external" href="#tinymce">TinyMCE</a></li>
+<li><a class="reference external" href="#aloha-editor">Aloha Editor</a></li>
+<li><a class="reference external" href="#ckeditor">CKEditor</a></li>
+<li><a class="reference external" href="#kupu">Kupu</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#html-editoren">HTML Editoren</a><ul>
+<li><a class="reference external" href="#bluefish">BlueFish</a></li>
+<li><a class="reference external" href="#amaya">Amaya</a></li>
+<li><a class="reference external" href="#kompozer">KompoZer</a></li>
+<li><a class="reference external" href="#bluegriffon">BlueGriffon</a></li>
+<li><a class="reference external" href="#adobe-dreamweaver">Adobe Dreamweaver</a></li>
+<li><a class="reference external" href="#microsoft-expression-web">Microsoft Expression Web</a></li>
+<li><a class="reference external" href="#microsoft-visual-web-developer">Microsoft Visual Web Developer</a></li>
+<li><a class="reference external" href="#netobjects-fusion">NetObjects Fusion</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#office-suites">Office Suites</a><ul>
+<li><a class="reference external" href="#abiword">Abiword</a></li>
+<li><a class="reference external" href="#openoffice-libreoffice">OpenOffice / LibreOffice</a></li>
+<li><a class="reference external" href="#microsoft-office">Microsoft Office</a></li>
+<li><a class="reference external" href="#koffice">KOffice</a></li>
+</ul>
+</li>
+<li><a class="reference external" href="#online-website-builder">Online Website Builder</a><ul>
+<li><a class="reference external" href="#blogger">Blogger</a></li>
+<li><a class="reference external" href="#google-sites">Google Sites</a></li>
+<li><a class="reference external" href="#squarespace">Squarespace</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </li>
 </ul>
