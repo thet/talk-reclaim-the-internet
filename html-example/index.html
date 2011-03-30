@@ -14,27 +14,31 @@ zurückgeliefert wird, wenn kein anderer dateiname angegeben ist. -->
                               utf-8 ist perfekt, da es sehr viele zeichen
                               unterschiedlicher sprachen unterstützt
                               unterstützt! -->
-                              
+
   <title>Titel des HTML Dokuments</title>
-  
+
   <!-- inkludieren eines stylesheets -->
   <link rel="stylesheet" type="text/css" media="all" href="styles.css" />
-  
+
   <!-- inkludieren eines favicons (erscheint in der adresszeile des browsers)
   -->
   <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico" />
 </head><!-- ende des kopfbereiches -->
 <body><!-- beginn des hauptbereiches -->
 
+  <h1></h1>
+  <br/>
+
+
   <h1>Überschrift ersten Ranges</h1>
   <h2>Überschrift zweiten Ranges</h2>
-  <p>Paragraph - Allgemeiner äöüp &auml; &euro;  Textteil. Es folgt ein Zeilenumbruch innerhalb des
-  Absatzes:<br /><!-- Elemente, die kein explizites End-Tag haben, sollen
+  <p>Paragraph - Allgemeiner äöüp &auml; € &euro;  Textteil. Es folgt ein Zeilenumbruch innerhalb des
+  Absatzes:<br/><!-- Elemente, die kein explizites End-Tag haben, sollen
   immer mit dem "/" Zeichen im Startelement abgeschlossen werden. Das
   gewährleistet die Kompatibilität zum XTHML Standard. das Leerzeichen
   zwischen Elementnamen und "/" Zeichen ist optional, aber erhöht die
   Kompatibilität mit älteren Browsern -->
-  HTML Dokumente sollten möglichst semantisch sinnvoll gegliedert werden.
+  HTML Dokumente sollten möglichst <emph>semantisch</emph> sinnvoll gegliedert werden.
   &lt;h1&gt; &dash; &lt;h4&gt; für Überschriften, Absätze immer in
   &lt;p&gt;-tags, listen und navigationsmenüs in &lt;ol&gt; oder
   &lt;ul&gt; elementen, ...</p>
@@ -55,6 +59,23 @@ zurückgeliefert wird, wenn kein anderer dateiname angegeben ist. -->
     alt="Text, der erscheint, wenn das Bild nicht angezeigt werden kann"
     title="Text, der erscheint, wenn man mit der Maus über das Bild fährt" />
   <br />
+  <br />
+  </p>
+
+  <p id="unsinn">
+    sadlkjhasdj<br/>
+    sdlkfjsdljgf mag<sup>a</sup> f ljdfsl j lsdkfjdsljf
+
+    <div>
+    </div>
+  </p>
+
+  <img class="bildmgr" src="img/foto_3.jpg"
+    alt="Text, der erscheint, wenn das Bild nicht angezeigt werden kann"
+    title="Text, der erscheint, wenn man mit der Maus über das Bild fährt" />
+  <br />
+  <br />
+
   Formatierung von Text: <b>fett (bold)</b>, <i>kursiv (italic)</i></p>
 
   <h2>Geordnete Listen (Ordered Lists)</h2>
@@ -66,13 +87,13 @@ zurückgeliefert wird, wenn kein anderer dateiname angegeben ist. -->
   </ol>
 
   <h2>Ungeordnete Listen (Unordered Lists)</h2>
-  <ul>
+  <ul class="roemische-zahlen">
     <li>Erstes Listenelement (List Item)</li>
     <li>Zweites Listenelement</li>
     <li>Drittes Listenelement</li>
     <li>Viertes Listenelement</li>
   </ul>
- 
+
 
 </body><!-- ende des hauptbereiches -->
 </html><!-- ende des html dokuments -->

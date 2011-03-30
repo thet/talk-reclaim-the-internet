@@ -1,0 +1,27 @@
+/* CSS Beispiel
+ * Syntax: SELEKTOR { STIL:WERT; }
+ */
+
+/* Kommentar */
+
+/* Selektion von HTML Elementen */
+
+
+h1 { /* hex #RRGGBB */
+    color:#DE2121;
+    text-decoration:underline; }
+h1:hover { color:blue; }
+
+/* Selektion von hierarchisch verschachtelten Elementen */
+p img { border:1px solid green; }
+
+/* css klasse */
+.bildmgr{
+    border: 5px dotted yellow;
+    margin-top:20px;
+}
+
+#unsinn {
+    line-height:20px;
+    color:green;
+}
